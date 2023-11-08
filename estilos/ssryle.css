@@ -1,0 +1,142 @@
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+.title-btn h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 35px;
+   margin-bottom: 1rem;
+
+}
+
+.title-btn p {
+    margin-top: 5px;
+    margin-bottom: 5rem;
+}
+
+
+
+.contenido {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ width: 60%;
+ margin: auto;
+ height: 100vh;
+place-content: center;
+
+}
+
+
+.card {
+   height:fill;
+    padding: 3rem;
+    color: white;
+    display: flex;
+  
+    flex-direction: column;
+}
+
+.title-btn {
+    display: flex;
+   
+    flex-direction: column;
+
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px  0 0 10px;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+
+}
+
+@media(max-width:768px) {
+    .one {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .three {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.btn {
+  border: 2px solid white;
+  color: hsl(31, 77%, 52%);
+  border-radius: 50px;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 75%;
+ 
+ 
+}
+
+.btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.uno:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+}
+
+.dos:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+}
+
+.tres:hover {
+    background-color:  hsl(179, 100%, 13%) ;
+    color: white;
+}
+.uno {
+    color: hsl(31, 77%, 52%) ;
+}
+
+.dos {
+    color:hsl(184, 100%, 22%) ;
+}
+
+.tres {
+    color: hsl(179, 100%, 13%);
+}
+    
+
+@media(max-width:768px) {
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        place-content: unset;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+}
+
+@media(min-width: 768px) and (max-width:1200px) {
+    .contenido {
+        width: 90%;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1500px) {
+    .contenido {
+        width: 80%;
+    }
+}
